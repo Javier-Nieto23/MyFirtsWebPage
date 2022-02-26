@@ -1,5 +1,27 @@
 <!-- this is my Firts Web Page-->
+<?php
 
+//echo "Conexion";
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "electronics shop";
+$port = 3306;
+
+$mysqli = mysqli_connect($host,$user,$pass,$db,$port);
+
+if($mysqli->connect_errno)
+{
+
+	echo "Error en la conexion No ($mysqli->connect_errno)
+	descripcion: $mysqli->connect_error";
+}
+else
+{
+	echo "Conexion Exitosa";
+}
+
+?>
 <!DOCTYPE html>
 
 <head>
@@ -18,9 +40,10 @@
     <center>
         <p>Electronics Shop</p>
         <!-- this a submenu of the page-->
-        <div id="menu wrapper">
-            <li><a href="Index.php">Home</a></li>
-            <li><a href="">Products</a>
+        <div class = "menu">
+
+            <li><a href="Index.php"><img src="icons/logo.png" height="45px"></a></li>
+            <li><a href="">Categorys</a>
                 <!-- this a submenu for the web page-->
                 <ul class="sub-menu">
                     <li><a href="">All</a></li>

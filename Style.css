@@ -1,1 +1,37 @@
 /* this is the code of the style of the web page */ 
+
+/*body*/
+body{
+
+    margin: 0;  
+    font-family: 0;
+  
+}
+
+menu{
+    padding: 0%;
+    list-style: none;
+    
+}
+
+/*the data of the products in a box */
+.box{
+        background-color: aliceblue;     
+        margin: 50px 12 px;
+        float: left;
+        width: 450px;
+        height: 250px;
+        text-align: center;
+        border: 5px solid #a3cd39;
+        border-radius: 10px;
+}
+
+/* the list of products called from the database*/
+.products-list{
+    background-color: white;
+    width: 708px;
+    height: 604px;
+    margin: auto;
+    margin-top: 20px;
+}
+
